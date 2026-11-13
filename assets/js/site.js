@@ -59,14 +59,20 @@ document.querySelectorAll('.copy-coupon').forEach(button=>{
 if(nav){nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');if(menu)menu.setAttribute('aria-expanded','false');}));}
 
 
-// Hourly deterministic product rotation. Every visitor sees the same selection
-// during a given local hour; the selection changes when the next hour begins.
+// Hourly product rotation with viewport-based loading.
+// Only fetch a category feed when the visitor is about to see that category.
 const hourlyTracks=[...document.querySelectorAll('[data-hourly-rotate="true"][data-feed]')];
 const hourlyCache=new Map();
-const localHourSeed=()=>{
- const d=new Date();
- return [d.getFullYear(),String(d.getMonth()+1).padStart(2,'0'),String(d.getDate()).padStart(2,'0'),String(d.getHours()).padStart(2,'0')].join('-');
+const dhakaParts=()=>{
+ const shifted=new Date(Date.now()+6*60*60*1000);
+ return {
+  year:shifted.getUTCFullYear(),
+  month:String(shifted.getUTCMonth()+1).padStart(2,'0'),
+  day:String(shifted.getUTCDate()).padStart(2,'0'),
+  hour:String(shifted.getUTCHours()).padStart(2,'0')
+ };
 };
+const dhakaHourSeed=()=>{const p=dhakaParts();return `${p.year}-${p.month}-${p.day}-${p.hour}`;};
 const hashSeed=value=>{
  let h=2166136261;
  for(let i=0;i<value.length;i++){h^=value.charCodeAt(i);h=Math.imul(h,16777619);}
@@ -86,7 +92,7 @@ const makeProductCard=(product)=>{
  const url='/'+String(product.product_url||'').replace(/^\/+/,'');
  const imageUrl='/'+String(product.image_small||product.image||'').replace(/^\/+/,'');
  const imageLink=document.createElement('a');imageLink.href=url;imageLink.setAttribute('aria-label',product.title||'View product');
- const image=document.createElement('img');image.src=imageUrl;image.alt=product.title||'Rokomari product';image.width=220;image.height=220;image.loading='lazy';image.decoding='async';imageLink.append(image);
+ const image=document.createElement('img');image.src=imageUrl;image.alt=product.title||'Rokomari product';image.width=220;image.height=220;image.loading='lazy';image.decoding='async';image.fetchPriority='low';imageLink.append(image);
  const body=document.createElement('div');body.className='product-card-body';
  const title=document.createElement('h3');const titleLink=document.createElement('a');titleLink.href=url;titleLink.textContent=product.title||'View product';title.append(titleLink);body.append(title);
  if(product.category_scraped){const meta=document.createElement('p');meta.className='meta';meta.textContent=product.category_scraped;body.append(meta);}
@@ -95,7 +101,7 @@ const makeProductCard=(product)=>{
  const details=document.createElement('a');details.className='card-button';details.href=url;details.textContent='View details';body.append(details);
  article.append(imageLink,body);return article;
 };
-const makeSeeMore=(url)=>{
+const makeSeeMore=url=>{
  const a=document.createElement('a');a.className='product-card see-more-card';a.href=url||'/rokomari-best-seller/';
  const icon=document.createElement('span');icon.className='see-more-icon';icon.textContent='→';
  const strong=document.createElement('strong');strong.textContent='See more';
@@ -106,8 +112,14 @@ const renderHourlyTrack=async track=>{
  const feed=track.dataset.feed;
  try{
   let products=hourlyCache.get(feed);
-  if(!products){const response=await fetch(feed,{cache:'no-cache'});if(!response.ok)throw new Error('Feed unavailable');const data=await response.json();products=Array.isArray(data)?data:(data.products||[]);hourlyCache.set(feed,products);}
-  const seed=hashSeed(localHourSeed()+'|'+feed);
+  if(!products){
+   const response=await fetch(feed); // use the browser's normal HTTP cache
+   if(!response.ok)throw new Error('Feed unavailable');
+   const data=await response.json();
+   products=Array.isArray(data)?data:(data.products||[]);
+   hourlyCache.set(feed,products);
+  }
+  const seed=hashSeed(dhakaHourSeed()+'|'+feed);
   const chosen=hourlyShuffle(products,seed).slice(0,11);
   if(!chosen.length)return;
   const fragment=document.createDocumentFragment();
@@ -115,18 +127,36 @@ const renderHourlyTrack=async track=>{
   fragment.append(makeSeeMore(track.dataset.seeMore));
   track.replaceChildren(fragment);
   track.scrollLeft=0;
-  track.dataset.rotationSeed=localHourSeed();
+  track.dataset.loaded='true';
+  track.dataset.rotationSeed=dhakaHourSeed();
  }catch(error){console.warn('Hourly product rotation could not load:',feed,error);}
 };
-const refreshHourlyTracks=()=>hourlyTracks.forEach(renderHourlyTrack);
 if(hourlyTracks.length){
- refreshHourlyTracks();
- const scheduleNextHour=()=>{
-  const now=new Date(),next=new Date(now);
-  next.setHours(now.getHours()+1,0,0,0);
-  window.setTimeout(()=>{refreshHourlyTracks();scheduleNextHour();},Math.max(1000,next-now+150));
+ if('IntersectionObserver' in window){
+  const feedObserver=new IntersectionObserver(entries=>{
+   entries.forEach(entry=>{
+    if(entry.isIntersecting){
+     renderHourlyTrack(entry.target);
+     feedObserver.unobserve(entry.target);
+    }
+   });
+  },{rootMargin:'650px 0px'});
+  hourlyTracks.forEach(track=>feedObserver.observe(track));
+ }else{
+  hourlyTracks.forEach(renderHourlyTrack);
+ }
+ // Refresh only the category rails already visited/loaded by the browser.
+ const scheduleNextDhakaHour=()=>{
+  const now=Date.now();
+  const dhaka=new Date(now+6*60*60*1000);
+  dhaka.setUTCHours(dhaka.getUTCHours()+1,0,0,0);
+  const nextBoundary=dhaka.getTime()-6*60*60*1000;
+  window.setTimeout(()=>{
+   hourlyTracks.filter(track=>track.dataset.loaded==='true').forEach(renderHourlyTrack);
+   scheduleNextDhakaHour();
+  },Math.max(1000,nextBoundary-now+100));
  };
- scheduleNextHour();
+ scheduleNextDhakaHour();
 }
 
 })();

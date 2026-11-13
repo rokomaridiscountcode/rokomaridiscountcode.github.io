@@ -193,3 +193,15 @@ a{transition:color .18s ease,background .18s ease,border-color .18s ease}
 .all-category-products a{font-size:.88rem;color:#41536b;text-decoration:none}
 .all-category-products a:hover{color:var(--orange-dark);text-decoration:underline}
 @media(max-width:650px){.all-category-products ul{grid-template-columns:1fr;max-height:400px}.all-category-products{padding:15px}}
+
+
+/* Mobile performance: defer rendering work for sections outside the viewport. */
+@supports (content-visibility: auto) {
+  main > .section,
+  main > .coupon-section,
+  main > .faq,
+  main > .info-panel {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 620px;
+  }
+}
