@@ -1,0 +1,14 @@
+title: rokomaridiscountcode
+description: Rokomari product guides, category deals, coupon information and shopping tips in Bangla and English.
+url: "https://rokomaridiscountcode.github.io"
+baseurl: ""
+lang: bn_BD
+markdown: kramdown
+permalink: pretty
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules
+  - .github

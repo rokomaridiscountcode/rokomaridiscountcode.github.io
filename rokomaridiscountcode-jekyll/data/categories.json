@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Rokomari Best Seller",
+    "slug": "best-seller",
+    "file": "best-seller.json"
+  },
+  {
+    "name": "Rokomari Books",
+    "slug": "books",
+    "file": "books.json"
+  },
+  {
+    "name": "Rokomari Electronics",
+    "slug": "electronics",
+    "file": "electronics.json"
+  },
+  {
+    "name": "Rokomari Foods",
+    "slug": "foods",
+    "file": "foods.json"
+  },
+  {
+    "name": "Rokomari Ghorer Bazar",
+    "slug": "ghorer-bazar",
+    "file": "ghorer-bazar.json"
+  },
+  {
+    "name": "Rokomari Kids Toys",
+    "slug": "kids-toys",
+    "file": "kids-toys.json"
+  },
+  {
+    "name": "Rokomari Baby Products",
+    "slug": "baby-products",
+    "file": "baby-products.json"
+  },
+  {
+    "name": "Rokomari Beauty & Health",
+    "slug": "beauty-health",
+    "file": "beauty-health.json"
+  }
+]
