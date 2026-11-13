@@ -4,7 +4,7 @@
   "products": [
     {
       "title": "Ghorer Bazar Ghawa Ghee 200 gm - A000101",
-      "product_url": "Product/ghorer-bazar/Ghorer%20Bazar%20Ghawa%20Ghee%20200%20gm%20-%20A000101/",
+      "product_url": "products/ghorer-bazar/ghorer-bazar-ghawa-ghee-200-gm-a000101/",
       "image": "assets-original/products-sm/Ghorer Bazar Ghawa Ghee 200 gm - A000101-647aa76be507.webp",
       "image_small": "assets-original/products-sm/Ghorer Bazar Ghawa Ghee 200 gm - A000101-647aa76be507.webp",
       "selling_price": 400.0,
@@ -17,7 +17,7 @@
     },
     {
       "title": "Ghorer Bazar Kath Badam 500 gm - A000027",
-      "product_url": "Product/ghorer-bazar/Ghorer%20Bazar%20Kath%20Badam%20500%20gm%20-%20A000027/",
+      "product_url": "products/ghorer-bazar/ghorer-bazar-kath-badam-500-gm-a000027/",
       "image": "assets-original/products-sm/Ghorer Bazar Kath Badam 500 gm - A000027-114e3eb082ca.webp",
       "image_small": "assets-original/products-sm/Ghorer Bazar Kath Badam 500 gm - A000027-114e3eb082ca.webp",
       "selling_price": 800.0,
@@ -30,7 +30,7 @@
     },
     {
       "title": "Ghorer Bazar Black Seed Honey 500 gm - A000006",
-      "product_url": "Product/ghorer-bazar/Ghorer%20Bazar%20Black%20Seed%20Honey%20500%20gm%20-%20A000006/",
+      "product_url": "products/ghorer-bazar/ghorer-bazar-black-seed-honey-500-gm-a000006/",
       "image": "assets-original/products-sm/Ghorer Bazar Black Seed Honey 500 gm - A000006-cf11dbf8e8ac.webp",
       "image_small": "assets-original/products-sm/Ghorer Bazar Black Seed Honey 500 gm - A000006-cf11dbf8e8ac.webp",
       "selling_price": 800.0,
@@ -43,7 +43,7 @@
     },
     {
       "title": "Ghorer Bazar Holud Gura 500 gm - A000020",
-      "product_url": "Product/ghorer-bazar/Ghorer%20Bazar%20Holud%20Gura%20500%20gm%20-%20A000020/",
+      "product_url": "products/ghorer-bazar/ghorer-bazar-holud-gura-500-gm-a000020/",
       "image": "assets-original/products-sm/Ghorer Bazar Holud Gura 500 gm - A000020-750755130ade.webp",
       "image_small": "assets-original/products-sm/Ghorer Bazar Holud Gura 500 gm - A000020-750755130ade.webp",
       "selling_price": 295.0,
@@ -56,7 +56,7 @@
     },
     {
       "title": "Ghorer Bazar Kaju Badam Medium 500gm - A000026",
-      "product_url": "Product/ghorer-bazar/Ghorer%20Bazar%20Kaju%20Badam%20Medium%20500gm%20-%20A000026/",
+      "product_url": "products/ghorer-bazar/ghorer-bazar-kaju-badam-medium-500gm-a000026/",
       "image": "assets-original/products-sm/Ghorer Bazar Kaju Badam Medium 500gm - A000026-87f28d06a570.webp",
       "image_small": "assets-original/products-sm/Ghorer Bazar Kaju Badam Medium 500gm - A000026-87f28d06a570.webp",
       "selling_price": 1000.0,
@@ -69,7 +69,7 @@
     },
     {
       "title": "Ghorer Bazar Doniya Gura 500 gm - A000018",
-      "product_url": "Product/ghorer-bazar/Ghorer%20Bazar%20Doniya%20Gura%20500%20gm%20-%20A000018/",
+      "product_url": "products/ghorer-bazar/ghorer-bazar-doniya-gura-500-gm-a000018/",
       "image": "assets-original/products-sm/Ghorer Bazar Doniya Gura 500 gm - A000018-b1eb8ff447dc.webp",
       "image_small": "assets-original/products-sm/Ghorer Bazar Doniya Gura 500 gm - A000018-b1eb8ff447dc.webp",
       "selling_price": 240.0,
@@ -82,7 +82,7 @@
     },
     {
       "title": "Ghorer Bazar Kalojira Oil 500 ml - A000030",
-      "product_url": "Product/ghorer-bazar/Ghorer%20Bazar%20Kalojira%20Oil%20500%20ml%20-%20A000030/",
+      "product_url": "products/ghorer-bazar/ghorer-bazar-kalojira-oil-500-ml-a000030/",
       "image": "assets-original/products-sm/Ghorer Bazar Kalojira Oil 500 ml - A000030-63bc1ba12293.webp",
       "image_small": "assets-original/products-sm/Ghorer Bazar Kalojira Oil 500 ml - A000030-63bc1ba12293.webp",
       "selling_price": 1250.0,
@@ -95,7 +95,7 @@
     },
     {
       "title": "Ghorer Bazar Ghawa Ghee 400 gm - A000102",
-      "product_url": "Product/ghorer-bazar/Ghorer%20Bazar%20Ghawa%20Ghee%20400%20gm%20-%20A000102/",
+      "product_url": "products/ghorer-bazar/ghorer-bazar-ghawa-ghee-400-gm-a000102/",
       "image": "assets-original/products-sm/Ghorer Bazar Ghawa Ghee 400 gm - A000102-e8b7a17f7ac7.webp",
       "image_small": "assets-original/products-sm/Ghorer Bazar Ghawa Ghee 400 gm - A000102-e8b7a17f7ac7.webp",
       "selling_price": 800.0,
@@ -108,7 +108,7 @@
     },
     {
       "title": "Ghorer Bazar Morich Gura 500gm - A000021",
-      "product_url": "Product/ghorer-bazar/Ghorer%20Bazar%20Morich%20Gura%20500gm%20-%20A000021/",
+      "product_url": "products/ghorer-bazar/ghorer-bazar-morich-gura-500gm-a000021/",
       "image": "assets-original/products-sm/Ghorer Bazar Morich Gura 500gm - A000021-2eea5bb17609.webp",
       "image_small": "assets-original/products-sm/Ghorer Bazar Morich Gura 500gm - A000021-2eea5bb17609.webp",
       "selling_price": 400.0,
@@ -121,7 +121,7 @@
     },
     {
       "title": "Ghorer Bazar Laccha Semai 500 gm - A000085",
-      "product_url": "Product/ghorer-bazar/Ghorer%20Bazar%20Laccha%20Semai%20500%20gm%20-%20A000085/",
+      "product_url": "products/ghorer-bazar/ghorer-bazar-laccha-semai-500-gm-a000085/",
       "image": "assets-original/products-sm/Ghorer Bazar Laccha Semai 500 gm - A000085-3c0883646197.webp",
       "image_small": "assets-original/products-sm/Ghorer Bazar Laccha Semai 500 gm - A000085-3c0883646197.webp",
       "selling_price": 750.0,
@@ -134,7 +134,7 @@
     },
     {
       "title": "Ghorer Bazar Medjool Khejur-Large 1 kg - A000105",
-      "product_url": "Product/ghorer-bazar/Ghorer%20Bazar%20Medjool%20Khejur-Large%201%20kg%20-%20A000105/",
+      "product_url": "products/ghorer-bazar/ghorer-bazar-medjool-khejur-large-1-kg-a000105/",
       "image": "assets-original/products-sm/Ghorer Bazar Medjool Khejur-Large 1 kg - A000105-67683823cc0c.webp",
       "image_small": "assets-original/products-sm/Ghorer Bazar Medjool Khejur-Large 1 kg - A000105-67683823cc0c.webp",
       "selling_price": 2200.0,
@@ -147,7 +147,7 @@
     },
     {
       "title": "Ghorer Bazar Moringa Powder 500 gm - A000053",
-      "product_url": "Product/ghorer-bazar/Ghorer%20Bazar%20Moringa%20Powder%20500%20gm%20-%20A000053/",
+      "product_url": "products/ghorer-bazar/ghorer-bazar-moringa-powder-500-gm-a000053/",
       "image": "assets-original/products-sm/Ghorer Bazar Moringa Powder 500 gm - A000053-71442c67123a.webp",
       "image_small": "assets-original/products-sm/Ghorer Bazar Moringa Powder 500 gm - A000053-71442c67123a.webp",
       "selling_price": 900.0,
@@ -160,7 +160,7 @@
     },
     {
       "title": "Shahi Masala 250 Gm - A000084",
-      "product_url": "Product/ghorer-bazar/Shahi%20Masala%20250%20Gm%20-%20A000084/",
+      "product_url": "products/ghorer-bazar/shahi-masala-250-gm-a000084/",
       "image": "assets-original/products-sm/Shahi Masala 250 Gm - A000084-910f1e08a445.webp",
       "image_small": "assets-original/products-sm/Shahi Masala 250 Gm - A000084-910f1e08a445.webp",
       "selling_price": 750.0,
@@ -173,7 +173,7 @@
     },
     {
       "title": "Ghorer Bazar Lychee Flower Honey 1kg - A000083",
-      "product_url": "Product/ghorer-bazar/Ghorer%20Bazar%20Lychee%20Flower%20Honey%201kg%20-%20A000083/",
+      "product_url": "products/ghorer-bazar/ghorer-bazar-lychee-flower-honey-1kg-a000083/",
       "image": "assets-original/products-sm/Ghorer Bazar Lychee Flower Honey 1kg - A000083-870186a0634d.webp",
       "image_small": "assets-original/products-sm/Ghorer Bazar Lychee Flower Honey 1kg - A000083-870186a0634d.webp",
       "selling_price": 1400.0,
@@ -186,7 +186,7 @@
     },
     {
       "title": "Ghorer Bazar Kaju Badam Medium 1 kg - A000025",
-      "product_url": "Product/ghorer-bazar/Ghorer%20Bazar%20Kaju%20Badam%20Medium%201%20kg%20-%20A000025/",
+      "product_url": "products/ghorer-bazar/ghorer-bazar-kaju-badam-medium-1-kg-a000025/",
       "image": "assets-original/products-sm/Ghorer Bazar Kaju Badam Medium 1 kg - A000025-cb815edbf742.webp",
       "image_small": "assets-original/products-sm/Ghorer Bazar Kaju Badam Medium 1 kg - A000025-cb815edbf742.webp",
       "selling_price": 2000.0,
@@ -199,7 +199,7 @@
     },
     {
       "title": "Ghorer Bazar Black Seed Honey 1 kg - A000007",
-      "product_url": "Product/ghorer-bazar/Ghorer%20Bazar%20Black%20Seed%20Honey%201%20kg%20-%20A000007/",
+      "product_url": "products/ghorer-bazar/ghorer-bazar-black-seed-honey-1-kg-a000007/",
       "image": "assets-original/products-sm/Ghorer Bazar Black Seed Honey 1 kg - A000007-786311e4ff2b.webp",
       "image_small": "assets-original/products-sm/Ghorer Bazar Black Seed Honey 1 kg - A000007-786311e4ff2b.webp",
       "selling_price": 1600.0,
@@ -212,7 +212,7 @@
     },
     {
       "title": "Ghorer Bazar Sondorbaner Honey 1kg - A000009",
-      "product_url": "Product/ghorer-bazar/Ghorer%20Bazar%20Sondorbaner%20Honey%201kg%20-%20A000009/",
+      "product_url": "products/ghorer-bazar/ghorer-bazar-sondorbaner-honey-1kg-a000009/",
       "image": "assets-original/products-sm/Ghorer Bazar Sondorbaner Honey 1kg - A000009-b87db7c79f39.webp",
       "image_small": "assets-original/products-sm/Ghorer Bazar Sondorbaner Honey 1kg - A000009-b87db7c79f39.webp",
       "selling_price": 2500.0,
@@ -225,7 +225,7 @@
     },
     {
       "title": "Ghorer Bazar Kala Vuna Masala 250 gm - A000110",
-      "product_url": "Product/ghorer-bazar/Ghorer%20Bazar%20Kala%20Vuna%20Masala%20250%20gm%20-%20A000110/",
+      "product_url": "products/ghorer-bazar/ghorer-bazar-kala-vuna-masala-250-gm-a000110/",
       "image": "assets-original/products-sm/Ghorer Bazar Kala Vuna Masala 250 gm - A000110-4fd3d2fdbcf2.webp",
       "image_small": "assets-original/products-sm/Ghorer Bazar Kala Vuna Masala 250 gm - A000110-4fd3d2fdbcf2.webp",
       "selling_price": 750.0,
@@ -238,7 +238,7 @@
     },
     {
       "title": "Ghorer Bazar Kalojira Oil 1ltr - A000029",
-      "product_url": "Product/ghorer-bazar/Ghorer%20Bazar%20Kalojira%20Oil%201ltr%20-%20A000029/",
+      "product_url": "products/ghorer-bazar/ghorer-bazar-kalojira-oil-1ltr-a000029/",
       "image": "assets-original/products-sm/Ghorer Bazar Kalojira Oil 1ltr - A000029-3e865a8b9330.webp",
       "image_small": "assets-original/products-sm/Ghorer Bazar Kalojira Oil 1ltr - A000029-3e865a8b9330.webp",
       "selling_price": 2500.0,
@@ -251,7 +251,7 @@
     },
     {
       "title": "Ghorer Bazar Laccha Semai 1 Kg - A000197",
-      "product_url": "Product/ghorer-bazar/Ghorer%20Bazar%20Laccha%20Semai%201%20Kg%20-%20A000197/",
+      "product_url": "products/ghorer-bazar/ghorer-bazar-laccha-semai-1-kg-a000197/",
       "image": "assets-original/products-sm/Ghorer Bazar Laccha Semai 1 Kg - A000197-39b347296d1c.webp",
       "image_small": "assets-original/products-sm/Ghorer Bazar Laccha Semai 1 Kg - A000197-39b347296d1c.webp",
       "selling_price": 1500.0,
@@ -264,7 +264,7 @@
     },
     {
       "title": "Ghorer Bazar Morich Gura 250 gm - A000097",
-      "product_url": "Product/ghorer-bazar/Ghorer%20Bazar%20Morich%20Gura%20250%20gm%20-%20A000097/",
+      "product_url": "products/ghorer-bazar/ghorer-bazar-morich-gura-250-gm-a000097/",
       "image": "assets-original/products-sm/Ghorer Bazar Morich Gura 250 gm - A000097-bf5c1bedfae8.webp",
       "image_small": "assets-original/products-sm/Ghorer Bazar Morich Gura 250 gm - A000097-bf5c1bedfae8.webp",
       "selling_price": 220.0,
@@ -277,7 +277,7 @@
     },
     {
       "title": "Ghorer Bazar Ghawa Ghee 200 gm",
-      "product_url": "Product/ghorer-bazar/Ghorer%20Bazar%20Ghawa%20Ghee%20200%20gm/",
+      "product_url": "products/ghorer-bazar/ghorer-bazar-ghawa-ghee-200-gm/",
       "image": "assets-original/products-sm/Ghorer Bazar Ghawa Ghee 200 gm-647aa76be507.webp",
       "image_small": "assets-original/products-sm/Ghorer Bazar Ghawa Ghee 200 gm-647aa76be507.webp",
       "selling_price": 400.0,
@@ -290,7 +290,7 @@
     },
     {
       "title": "Ghorer Bazar Shahi Masala 500 Gm - A000059",
-      "product_url": "Product/ghorer-bazar/Ghorer%20Bazar%20Shahi%20Masala%20500%20Gm%20-%20A000059/",
+      "product_url": "products/ghorer-bazar/ghorer-bazar-shahi-masala-500-gm-a000059/",
       "image": "assets-original/products-sm/Ghorer Bazar Shahi Masala 500 Gm - A000059-a6eab43da3c0.webp",
       "image_small": "assets-original/products-sm/Ghorer Bazar Shahi Masala 500 Gm - A000059-a6eab43da3c0.webp",
       "selling_price": 1500.0,
@@ -303,7 +303,7 @@
     },
     {
       "title": "Ghorer Bazar Kalojirar Dana 1 kg - A000015",
-      "product_url": "Product/ghorer-bazar/Ghorer%20Bazar%20Kalojirar%20Dana%201%20kg%20-%20A000015/",
+      "product_url": "products/ghorer-bazar/ghorer-bazar-kalojirar-dana-1-kg-a000015/",
       "image": "assets-original/products-sm/Ghorer Bazar Kalojirar Dana 1 kg - A000015-90ba68106a2d.webp",
       "image_small": "assets-original/products-sm/Ghorer Bazar Kalojirar Dana 1 kg - A000015-90ba68106a2d.webp",
       "selling_price": 1000.0,
@@ -316,7 +316,7 @@
     },
     {
       "title": "Ghorer Bazar Kala Vuna Masala 500 gm - A000109",
-      "product_url": "Product/ghorer-bazar/Ghorer%20Bazar%20Kala%20Vuna%20Masala%20500%20gm%20-%20A000109/",
+      "product_url": "products/ghorer-bazar/ghorer-bazar-kala-vuna-masala-500-gm-a000109/",
       "image": "assets-original/products-sm/Ghorer Bazar Kala Vuna Masala 500 gm - A000109-da83849e8212.webp",
       "image_small": "assets-original/products-sm/Ghorer Bazar Kala Vuna Masala 500 gm - A000109-da83849e8212.webp",
       "selling_price": 1500.0,

@@ -20,13 +20,39 @@ document.querySelectorAll('.section').forEach(section=>{
   });
  });
 });
-// Coupon copy controls. Codes are copied only; shoppers must verify validity at checkout.
+// Copy the coupon code, then open Rokomari through the configured affiliate link.
+const ROKOMARI_AFFILIATE_URL='https://www.rokomari.com/?affId=9A0ROR69O010Ai5&affs=72819&cma=604800';
 document.querySelectorAll('.copy-coupon').forEach(button=>{
  button.addEventListener('click',async()=>{
   const code=button.dataset.code||'';
-  try{await navigator.clipboard.writeText(code);button.textContent='Copied';}
-  catch(e){button.textContent=code;const range=document.createRange();const node=document.createElement('textarea');node.value=code;document.body.appendChild(node);node.select();document.execCommand('copy');node.remove();button.textContent='Copied';}
-  window.setTimeout(()=>button.textContent='Copy code',1800);
+  const originalLabel=button.textContent;
+  button.disabled=true;
+  button.textContent='Copying…';
+  let copied=false;
+  try{
+   if(navigator.clipboard&&window.isSecureContext){
+    await navigator.clipboard.writeText(code);
+    copied=true;
+   }else{
+    const field=document.createElement('textarea');
+    field.value=code;field.setAttribute('readonly','');
+    field.style.position='fixed';field.style.opacity='0';
+    document.body.appendChild(field);field.select();
+    copied=document.execCommand('copy');field.remove();
+   }
+  }catch(error){
+   try{
+    const field=document.createElement('textarea');
+    field.value=code;field.setAttribute('readonly','');
+    field.style.position='fixed';field.style.opacity='0';
+    document.body.appendChild(field);field.select();
+    copied=document.execCommand('copy');field.remove();
+   }catch(fallbackError){copied=false;}
+  }
+  button.textContent=copied?'Copied! Redirecting…':'Opening Rokomari…';
+  // Give the clipboard operation a moment to complete before navigating.
+  const destination=button.dataset.redirectUrl||ROKOMARI_AFFILIATE_URL;
+  window.setTimeout(()=>{window.location.assign(destination);},450);
  });
 });
 // Close mobile navigation after choosing a destination.

@@ -30,3 +30,11 @@ This repository contains the static Jekyll conversion of the supplied PHP websit
 
 - Homepage product rails choose 11 products from each category feed using a deterministic local date/hour seed, then append a See more card. The selected products remain stable for the current hour and refresh at the next local hour without requiring a page reload.
 - Product rails show four cards on desktop, three on medium screens and two on phones; arrow controls advance by the visible card count.
+
+## SEO permalink migration
+
+- Product pages now use `/products/<category>/<descriptive-product-slug>/` paths.
+- The product database, search index, category feeds, internal links, canonical tags, Product schema, Breadcrumb schema and sitemap point to the new paths.
+- Previous `/Product/.../` paths are retained as noindex HTML redirect pages pointing to the new canonical URL. GitHub Pages does not provide server-side 301 redirects for these static paths.
+- Coupon buttons copy the coupon text and then navigate to the configured Rokomari affiliate landing URL.
+- Product detail scripts are deferred, product images use asynchronous decoding and the primary product image is prioritized; supporting images are lazy-loaded.
